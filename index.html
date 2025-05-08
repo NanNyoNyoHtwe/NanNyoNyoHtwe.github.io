@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>နန်းညိုညိုထွေး - GitHub Page</title>
+    <style>
+        :root {
+            --primary-color: #3498db; /* Blue */
+            --secondary-color: #ffffff; /* White */
+            --accent-color: #2980b9; /* Darker Blue */
+        }
+        
+        body {
+            font-family: 'Pyidaungsu', 'Noto Sans Myanmar', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--secondary-color);
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        
+        h1, h2, h3 {
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            background-color: var(--secondary-color);
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hobbies, .awards, .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .hobby, .award, .skill {
+            background-color: #f0f8ff;
+            padding: 1rem;
+            border-radius: 5px;
+            flex: 1 1 200px;
+            transition: transform 0.3s;
+        }
+        
+        .hobby:hover, .award:hover, .skill:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project {
+            margin-bottom: 2rem;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hobbies, .awards, .skills {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Replace with your actual image path -->
+            <img src="profile.jpg" alt="နန်းညိုညိုထွေး" class="profile-img">
+            <h1>နန်းညိုညိုထွေး</h1>
+            <p>ကျောင်းသူ | ကြက်တောင်ရိုက်ခြင်းဝါသနာရှင် | Hydroponic စီမံကိန်း</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">ကျွန်မအကြောင်း</h2>
+            <p>မင်္ဂလာပါ။ ကျွန်မနာမည်ကနန်းညိုညိုထွေးဖြစ်ပါတယ်။ တောင်ကလေးဘုန်းတောကြီးသင်ပညာရေးကျောင်း၊ ၁၂တန်းမှာ ပညာသင်ကြားနေပါတယ်။ မွေးချင်းနှစ်ယောက်ရှိသည့်အနက် အကြီးဆုံးသမီးဖြစ်ပါတယ်။ ကရင်ပြည်နယ်၊ ဘားအံမြို့၊ သာနုံးရွာမှာ နေထိုင်ပါတယ်။ အပြာရောင်နဲ့ အဖြူရောင်ကို အထူးကြိုက်နှစ်သက်ပါတယ်။</p>
+        </section>
+        
+        <section id="education">
+            <h2 class="section-title">ပညာရေး</h2>
+            <p><strong>တောင်ကလေးဘုန်းတောကြီးသင်ပညာရေးကျောင်း</strong> - ၁၂တန်း (လက်ရှိ)</p>
+            <p><strong>သာနုံးရွာ အခြေခံပညာအထက်တန်းကျောင်း</strong></p>
+        </section>
+        
+        <section id="hobbies">
+            <h2 class="section-title">ဝါသနာများ</h2>
+            <div class="hobbies">
+                <div class="hobby">
+                    <h3>ကြက်တောင်ရိုက်ခြင်း</h3>
+                    <p>ကြက်တောင်ရိုက်ခြင်းကို အထူးဝါသနာပါပြီး အချိန်ရတိုင်း ကစားလေ့ရှိပါတယ်။</p>
+                </div>
+                <div class="hobby">
+                    <h3>သီချင်းနားထောင်ခြင်း</h3>
+                    <p>အချိန်တိုင်းသီချင်းနားထောင်ရတာကို နှစ်သက်ပါတယ်။</p>
+                </div>
+                <div class="hobby">
+                    <h3>သီချင်းဆိုခြင်း</h3>
+                    <p>သီချင်းဆိုခြင်းကိုလည်း အထူးဝါသနာပါပါတယ်။</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="awards">
+            <h2 class="section-title">ရရှိခဲ့သောဆုများ</h2>
+            <div class="awards">
+                <div class="award">
+                    <h3>ပါဠိပထမပြန်</h3>
+                    <p>အခြေပြုမူလတန်း၊ ပထမငယ်တန်း</p>
+                </div>
+                <div class="award">
+                    <h3>ကရင်စာပေ</h3>
+                    <p>လိက်ခင်းထါ်၊ လိက်လ်ုဆင့်၊ လိက်ဏီ့ဆင့်</p>
+                </div>
+                <div class="award">
+                    <h3>အဘိဓမ္မာ</h3>
+                    <p>ရိုးရိုး - ပထမဆင့်၊ ဒုတိယဆင့်၊ တတိယဆင့်</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2 class="section-title">စီမံကိန်းများ</h2>
+            <div class="project">
+                <h3>Hydroponic (မြေမဲ့စိုက်ပျိုးနည်း)</h3>
+                <p>Hydroponic ဆိုတာက မြေမသုံးဘဲ ရေနဲ့အာဟာရဓာတ်ဖြေရည်ကိုသုံးပြီး အပင်တွေကို စိုက်ပျိုးတဲ့နည်းလမ်းဖြစ်ပါတယ်။ ဒီနည်းလမ်းက ရေနဲ့နေရာကို ချွေတာနိုင်ပြီး အထွက်နှုန်းလည်း မြင့်မားပါတ
